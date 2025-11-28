@@ -1,0 +1,412 @@
+<!--Note:The template file will be copied to a new file. When you change the code of the template file you can create new file with this base code. -->
+<!--Note:The template file will be copied to a new file. When you change the code of the template file you can create new file with this base code. -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Byamungu Gloire — Software Developer & Band Leader</title>
+
+  <style>
+  :root {
+  --bg: #0b0d10;
+  --card: #0f1720;
+  --muted: #9aa3ad;
+  --accent: #8b5cf6;
+  --glass: rgba(255,255,255,0.03);
+  --radius: 12px;
+  --maxw: 1100px;
+  --fw-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent sideways scrolling */
+}
+
+body {
+  background: linear-gradient(180deg, #071018 0%, var(--bg) 100%);
+  color: #e6eef6;
+  font-family: var(--fw-sans);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--maxw);
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap; /* Ensure header fits on small screens */
+}
+
+.brand {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent), #4f46e5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0 6px 30px rgba(139,92,246,0.12);
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 26px;
+  align-items: start;
+  margin-bottom: 32px;
+}
+
+.panel {
+  background: linear-gradient(180deg, var(--glass), transparent);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 22px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.tag {
+  color: var(--accent);
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.lead {
+  color: var(--muted);
+  margin-top: 12px;
+}
+
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: inherit;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--accent), #5b21b6);
+  box-shadow: 0 8px 30px rgba(139,92,246,0.14);
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 22px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.card {
+  padding: 18px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* Footer */
+footer {
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+  margin-top: 12px;
+  padding: 8px;
+}
+
+/* ------------------------------
+   RESPONSIVE BREAKPOINTS
+   ------------------------------ */
+
+/* Medium screens */
+@media (max-width: 1024px) {
+  body {
+    padding: 16px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small tablets & large phones */
+@media (max-width: 880px) {
+  nav {
+    display: none !important; /* Fully hide nav */
+  }
+
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  body {
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .avatar {
+    width: 54px;
+    height: 54px;
+    font-size: 18px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 420px) {
+  h1 {
+    font-size: 21px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+    
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <a class="brand" href="#">
+        <div class="avatar">BG</div>
+        <div>
+          <div style="font-weight:800">Byamungu Gloire</div>
+          <div style="font-size:13px;color:var(--muted)">Software Developer • Band Leader — Hano Sapient Band</div>
+        </div>
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#music">Music</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="panel">
+          <h1>Hi — I'm <span style="color:var(--accent)">Byamungu Gloire</span>, known as <span style="color:var(--accent)">Kigeli Brin</span> in the music world.</h1>
+          <div class="tag">Software Developer • Band Leader</div>
+          
+          <p class="lead">I build modern, responsive web apps and lead Hano Sapient Band. I hold a High School Diploma in Software Development. I perform musical covers and I'm working on original compositions.</p>
+
+          <div class="cta">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn" href="#music">Music Work</a>
+            <a class="btn" href="documents/Byamungu-Gloire-CV.pdf" download>Download CV</a>
+          </div>
+
+          <div class="meta">Based in Nakivale Refugee Settlement, Uganda • Open for remote collaboration</div>
+        </div>
+
+        <aside class="panel" style="display:flex;flex-direction:column;gap:12px">
+          <div style="font-weight:800">Quick Facts</div>
+
+          <div class="card" style="padding:12px">
+            <div style="font-weight:700">Education</div>
+            <div class="proj-meta">High School Diploma — Software Development</div>
+          </div>
+
+          <div class="card" style="padding:12px">
+            <div style="font-weight:700">Music</div>
+            <div class="proj-meta">Band leader — Hano Sapient Band. TBMOTY Award winner.</div>
+          </div>
+
+          <div class="card" style="padding:12px">
+            <div style="font-weight:700">Contact</div>
+            <div class="proj-meta">Email: gogobrinn@gmail.com</div>
+            <div class="proj-meta">Email: kigelibrin@gmail.com</div>
+            <div class="proj-meta">WhatsApp: +250 786 979 388</div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <h2 style="margin-bottom:12px">About Me</h2>
+        <div class="card">
+          <p>
+            I was born in the Democratic Republic of Congo, raised in Rwanda, and returned to Congo after completing high school. 
+            Today I live in Nakivale Refugee Settlement, Uganda. I split my work between software development and music.
+          </p>
+          <p>
+            I’m passionate about technology and creativity. I enjoy building visually polished web experiences and leading musical performances. 
+            I believe in creating meaningful work that connects people—through apps, stories, and sound.
+          </p>
+          <p>
+            My long-term goal is to advance my software engineering skills professionally while growing Hano Sapient Band into a fully original, internationally recognized group.
+          </p>
+        </div>
+      </section>
+
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2 style="margin-bottom:12px">Software Projects</h2>
+        <div class="grid-2">
+
+          <div class="card">
+            <div class="project-title">Personal Portfolio Website</div>
+            <div class="proj-meta">HTML • CSS • Hosted on GitHub Pages</div>
+
+            <p>A responsive personal portfolio to present my work and music journey.</p>
+
+            <div style="margin-top:12px">
+              <a href="#" style="color:var(--accent)">View on GitHub</a> · 
+              <a href="#" style="color:var(--accent)">Live Site</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="project-title">Music Player Web App</div>
+            <div class="proj-meta">JavaScript • Media</div>
+
+            <p>A simple online interface for streaming band demos and covers.</p>
+
+            <div style="margin-top:12px">
+              <a href="#" style="color:var(--accent)">View on GitHub</a> · 
+              <a href="#" style="color:var(--accent)">Live Demo</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- MUSIC -->
+      <section id="music">
+        <h2 style="margin-bottom:12px">Music — Hano Sapient Band</h2>
+
+        <div class="grid-2">
+
+          <div class="card">
+            <div style="font-weight:800;margin-bottom:8px">Covers & Performances</div>
+            <p class="proj-meta">Band leader: Byamungu Gloire</p>
+            <p>We perform community events, cover recordings, and live music sessions.</p>
+
+            <p style="margin-top:10px; font-weight:700;">Recent Cover:</p>
+            <a href="https://youtu.be/PHM8aiD0RIE" style="color:var(--accent)">Ibitekerezo — Makanyaga Abdoul</a>
+          </div>
+
+          <div class="card">
+            <div style="font-weight:800;margin-bottom:8px">Band Skills</div>
+            <ul style="color:var(--muted);padding-left:18px">
+              <li>Song Arrangement</li>
+              <li>Live Performance</li>
+              <li>Band Leadership</li>
+              <li>Guitar Player</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2 style="margin-bottom:12px">Contact</h2>
+
+        <div class="card">
+          <p><strong>Email:</strong> gogobrinn@gmail.com</p>
+          <p><strong>Email:</strong> kigelibrin@gmail.com</p>
+          <p><strong>WhatsApp:</strong> +250 786 979 388</p>
+          <p style="margin-top:12px;color:var(--muted)">For collaboration, booking, or development inquiries.</p>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> Byamungu Gloire — All rights reserved.
+      </footer>
+
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
